@@ -12,7 +12,7 @@ t=5 #Max Runtime
 s=42 #Seed
 
 out=out.txt
-ARGS="-i ${instance} -ps ${ps} -gs ${gs} -ne ${ne} -nc ${nc} -lbd ${lbd} -ubd ${ubd} -t ${t} -s ${s}"
+ARGS="-i ${instance} -s ${s} -ps ${ps} -gs ${gs} -ne ${ne} -nc ${nc} -lbd ${lbd} -ubd ${ubd} -t ${t}"
 screen=salida
 rm -rf ${screen}
 
