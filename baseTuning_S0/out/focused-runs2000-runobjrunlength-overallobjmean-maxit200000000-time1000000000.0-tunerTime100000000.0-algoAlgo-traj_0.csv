@@ -1,0 +1,4 @@
+"Total Time","Mean Performance","Wallclock Time","Incumbent ID","Automatic Configurator Time","Configuration..."
+0.1080, 100000000, 0.0003, 0, 0.1080, gs='25', ps='10'
+0.2120, 8273.0, 5.3191, 0, 0.1120, gs='25', ps='10'
+0.4120, 8273.0, 16.1659, 0, 0.1120, gs='25', ps='10'

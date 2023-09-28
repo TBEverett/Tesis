@@ -1,0 +1,5 @@
+hola
+SolveVRP.params
+outputTuner=ParamILS_ASolveVRP_FSolveVRP_S1.out
+time ruby paramils2.3.8-source/param_ils_2_3_run.rb -numRun 1 -approach focused -userunlog 1 -validN 0 -pruning 0 -maxEvals 1000 -scenariofile scn/SolveVRP.scn > ParamILS_ASolveVRP_FSolveVRP_S1.out
+mv out respaldosSolveVRP/outASolveVRP_FSolveVRP_S1

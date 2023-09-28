@@ -1,0 +1,84 @@
+Call: /usr/bin/ruby ../scripts/param_ils_2_3_run.rb "-numRun" "1" "-approach" "focused" "-userunlog" "1" "-validN" "0" "-pruning" "0" "-maxEvals" "1000" "-scenariofile" "scn/SolveVRP.scn"
+
+
+seed: 2468
+algo: bash SolveVRP.sh
+tunerTimeout (CPU time): 100000000.0
+maxWallTime: 8640000.0
+maxEvals: 1000
+run_obj: runlength
+overall_obj: mean
+instance_file: inst/SolveVRP.inst
+test_instance_file: inst/SolveVRP.inst
+N: 2000
+cutoff_time: 1000000000.0
+cutoff_length: 2147483647
+R: 10
+pertubation_strength_basic: 
+pertubation_strength_scaling: false
+p_restart: 0.01
+Run 2
+Level 
+========================================================
+Starting ILS for level 1, i.e. a limit of N=2000, and cutoff time=1000000000.0.
+Current CPU time = 0, this run goes until 100000000.0 
+========================================================
+New Incumbent: 0, 100000000 [0, 0]. With state -ps=10
+1/1000, 1000000000.0000001/100000000.0
+ Same incumbent, new precision:
+New Incumbent: 1000000000.0000001, 2147483647.001 [1, 1000000000.0]. With state -ps=10
+ParamILS has reached the specified CPU time limit of 100000000.0 seconds => stopping the search now.
+   BLS in iteration 1, start with -ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0])
+ParamILS has reached the specified CPU time limit of 100000000.0 seconds => stopping the search now.
+          
+============= Performing 0 bonus runs of state: -ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 0 bonus runs for LM: -ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0])
+
+   LM for iteration 1: -ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 1): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 1): -ps=10
+==================================================================
+Training quality of this incumbent parameter configuration: 2147483647.001, based on 1 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+-ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0])
+-ps=10 (2147483647.001 [based on 1 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 1000000000.0000001, 2147483647.001 [1, 1000000000.0]. With state -ps=10
+ParamILS has reached the specified CPU time limit of 100000000.0 seconds => stopping the search now.
+Final solution for depth 1 with limit N=2000, and cutoff time=1000000000.0.
+New Incumbent: 1000000000.0000001, 2147483647.001 [1, 1000000000.0]. With state -ps=10
+
+==================================================================
+ParamILS is finished.
+==================================================================
+
+Final best parameter configuration found: -ps=10
+==================================================================
+Active parameters: -ps=10
+
+==================================================================
+Training quality of this final best found parameter configuration: 2147483647.001, based on 1 runs with cutoff 1000000000.0
+==================================================================
+
+
+==================================================================
+Computing validation result on independent data -- 0 runs with cutoff time 1000000000.0...
+==================================================================
+Combined result: 1000000000000000000
+
+================================================================
+Final best parameter configuration: -ps=10
+==================================================================
+Active parameters: -ps=10
+
+================================================================
+Training quality of this final best found parameter configuration: 2147483647.001, based on 1 runs with cutoff 1000000000.0
+Test quality of this final best found parameter configuration: 1000000000000000000, based on 0 independent runs with cutoff 1000000000.0
+==================================================================
