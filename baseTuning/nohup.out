@@ -1,0 +1,44 @@
+hola
+SolveVRP.params
+outputTuner=ParamILS_ASolveVRP_FSolveVRP_S1.out
+time ruby paramils2.3.8-source/param_ils_2_3_run.rb -numRun 1 -approach focused -userunlog 1 -validN 0 -pruning 0 -maxEvals 1000 -scenariofile scn/SolveVRP.scn > ParamILS_ASolveVRP_FSolveVRP_S1.out
+/home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:403:in `system': Interrupt
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:403:in `block (3 levels) in getAlgoResultsForInstsAndParams'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:386:in `each'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:386:in `block (2 levels) in getAlgoResultsForInstsAndParams'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:379:in `each'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:379:in `block in getAlgoResultsForInstsAndParams'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:378:in `each'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:378:in `getAlgoResultsForInstsAndParams'
+	from /home/ton/tesis/Tesis/baseTuning/paramils2.3.8-source/global_helper.rb:673:in `getAlgoResultsForEntryParamsPairs'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:267:in `getRunsOnEntriesWithParams'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:559:in `doRunsBounded'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:622:in `boundedIncTimeSpentInState'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:650:in `better'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:891:in `block in iterated_local_search'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:886:in `each'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:886:in `iterated_local_search'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:851:in `iterative_deepening_ils'
+	from paramils2.3.8-source/param_ils_2_3_run.rb:1836:in `<main>'
+Traceback (most recent call last):
+  File "/home/ton/tesis/Tesis/baseTuning/SolveVRP.py", line 57, in <module>
+    res = solve(stop=MaxRuntime(args.time), seed=args.seed, population_params=params)
+  File "/home/ton/tesis/Tesis/baseTuning/SolveVRP.py", line 46, in solve
+    return algo.run(stop)
+  File "/home/ton/.local/lib/python3.10/site-packages/pyvrp/GeneticAlgorithm.py", line 168, in run
+    self._improve_offspring(offspring)
+  File "/home/ton/.local/lib/python3.10/site-packages/pyvrp/GeneticAlgorithm.py", line 193, in _improve_offspring
+    sol = self._search(sol, self._cost_evaluator)
+  File "/home/ton/.local/lib/python3.10/site-packages/pyvrp/search/LocalSearch.py", line 108, in __call__
+    return self._ls(solution, cost_evaluator)
+KeyboardInterrupt
+mkdir: cannot create directory ‘respaldosSolveVRP’: File exists
+hola
+SolveVRP.params
+outputTuner=ParamILS_ASolveVRP_FSolveVRP_S1.out
+time ruby paramils2.3.8-source/param_ils_2_3_run.rb -numRun 1 -approach focused -userunlog 1 -validN 0 -pruning 0 -maxEvals 1000 -scenariofile scn/SolveVRP.scn > ParamILS_ASolveVRP_FSolveVRP_S1.out
+
+real	86m41.739s
+user	88m57.432s
+sys	10m18.798s
+mv out respaldosSolveVRP/outASolveVRP_FSolveVRP_S1

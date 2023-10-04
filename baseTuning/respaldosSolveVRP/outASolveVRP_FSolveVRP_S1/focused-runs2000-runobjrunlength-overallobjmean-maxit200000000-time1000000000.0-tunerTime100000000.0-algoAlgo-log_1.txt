@@ -1,0 +1,808 @@
+Call: /usr/bin/ruby ../scripts/param_ils_2_3_run.rb "-numRun" "1" "-approach" "focused" "-userunlog" "1" "-validN" "0" "-pruning" "0" "-maxEvals" "1000" "-scenariofile" "scn/SolveVRP.scn"
+
+
+seed: 2468
+algo: bash SolveVRP.sh
+tunerTimeout (CPU time): 100000000.0
+maxWallTime: 8640000.0
+maxEvals: 1000
+run_obj: runlength
+overall_obj: mean
+instance_file: inst/SolveVRP.inst
+test_instance_file: inst/SolveVRP.inst
+N: 2000
+cutoff_time: 1000000000.0
+cutoff_length: 2147483647
+R: 10
+pertubation_strength_basic: 
+pertubation_strength_scaling: false
+p_restart: 0.01
+Run 2
+Level 
+========================================================
+Starting ILS for level 1, i.e. a limit of N=2000, and cutoff time=1000000000.0.
+Current CPU time = 0, this run goes until 100000000.0 
+========================================================
+New Incumbent: 0, 100000000 [0, 0]. With state gs=25, ps=20
+ Same incumbent, new precision:
+New Incumbent: 0.1, 8273.0 [1, 1000000000.0]. With state gs=25, ps=20
+          -> Take improving step to random gs=25 ps=40 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=45 ps=30 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=45 ps=40 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=25 ps=10 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=5 ps=5 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=45 ps=5 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+
+State wants more detail (1+1) than incumbent (1), doing incumbent first:
+gs=45 ps=5 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 1 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 0.7999999999999999, 8273.0 [2, 1000000000.0]. With state gs=25, ps=20
+          -> Take improving step to random gs=25 ps=20 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=35 ps=50 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=25 ps=30 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+
+          -> Take improving step to random gs=15 ps=40 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+
+   BLS in iteration 1, start with gs=15 ps=40 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 40->20"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=20 (8273.0 [based on 2 runs with cutoff 1000000000.0]) with flip 1
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=20 (8273.0 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (2+1) than incumbent (2), doing incumbent first:
+gs=15 ps=20 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 2 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 1.8000000000000005, 8273.0 [3, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=15 ps=20 (8273.0 [based on 3 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->5"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=5 (8273.0 [based on 3 runs with cutoff 1000000000.0]) with flip 2
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=5 (8273.0 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (3+1) than incumbent (3), doing incumbent first:
+gs=15 ps=5 (8273.0 [based on 3 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 3 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 2.3000000000000007, 8273.0 [4, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=15 ps=5 (8273.0 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->10"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=10 (8273.0 [based on 4 runs with cutoff 1000000000.0]) with flip 3
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=10 (8273.0 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (4+1) than incumbent (4), doing incumbent first:
+gs=15 ps=10 (8273.0 [based on 4 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 4 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 2.9000000000000012, 8273.0 [5, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=15 ps=10 (8273.0 [based on 5 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 10->50"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=50 (8273.0 [based on 5 runs with cutoff 1000000000.0]) with flip 4
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=50 (8273.0 [based on 5 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (5+1) than incumbent (5), doing incumbent first:
+gs=15 ps=50 (8273.0 [based on 5 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 5 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 3.600000000000002, 8273.0 [6, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=15 ps=50 (8273.0 [based on 6 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 15->25"], evaluating ...
+          -> Take improving step to neighbour gs=25 ps=50 (8273.0 [based on 6 runs with cutoff 1000000000.0]) with flip 5
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=50 (8273.0 [based on 6 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (6+1) than incumbent (6), doing incumbent first:
+gs=25 ps=50 (8273.0 [based on 6 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 6 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 4.4, 8273.0 [7, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=25 ps=50 (8273.0 [based on 7 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 50->20"], evaluating ...
+State wants more detail (7+1) than incumbent (7), doing incumbent first:
+gs=25 ps=50 (8273.0 [based on 7 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 7 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 4.6, 8273.0 [8, 1000000000.0]. With state gs=25, ps=20
+          -> Take improving step to neighbour gs=25 ps=20 (8273.0 [based on 8 runs with cutoff 1000000000.0]) with flip 6
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=20 (8273.0 [based on 8 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 4.799999999999999, 8273.0 [9, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=25 ps=20 (8273.0 [based on 9 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->5"], evaluating ...
+          -> Take improving step to neighbour gs=25 ps=5 (8273.0 [based on 9 runs with cutoff 1000000000.0]) with flip 7
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=5 (8273.0 [based on 9 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (9+1) than incumbent (9), doing incumbent first:
+gs=25 ps=5 (8273.0 [based on 9 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 9 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 5.799999999999995, 8273.0 [10, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=25 ps=5 (8273.0 [based on 10 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=5 (8273.0 [based on 10 runs with cutoff 1000000000.0]) with flip 8
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=5 (8273.0 [based on 10 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (10+1) than incumbent (10), doing incumbent first:
+gs=35 ps=5 (8273.0 [based on 10 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 10 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 6.999999999999991, 8273.0 [11, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=35 ps=5 (8273.0 [based on 11 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->45"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=5 (8273.0 [based on 11 runs with cutoff 1000000000.0]) with flip 9
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=5 (8273.0 [based on 11 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (11+1) than incumbent (11), doing incumbent first:
+gs=45 ps=5 (8273.0 [based on 11 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 11 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 8.099999999999987, 8273.0 [12, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=5 (8273.0 [based on 12 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 45->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=5 (8273.0 [based on 12 runs with cutoff 1000000000.0]) with flip 10
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=5 (8273.0 [based on 12 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (12+1) than incumbent (12), doing incumbent first:
+gs=5 ps=5 (8273.0 [based on 12 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 12 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 9.399999999999983, 8273.0 [13, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=5 (8273.0 [based on 13 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->10"], evaluating ...
+101/1000, 10.09999999999998/100000000.0
+          -> Take improving step to neighbour gs=5 ps=10 (8273.0 [based on 13 runs with cutoff 1000000000.0]) with flip 11
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=10 (8273.0 [based on 13 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (13+1) than incumbent (13), doing incumbent first:
+gs=5 ps=10 (8273.0 [based on 13 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 13 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 10.899999999999977, 8273.0 [14, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=10 (8273.0 [based on 14 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->25"], evaluating ...
+          -> Take improving step to neighbour gs=25 ps=10 (8273.0 [based on 14 runs with cutoff 1000000000.0]) with flip 12
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=10 (8273.0 [based on 14 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (14+1) than incumbent (14), doing incumbent first:
+gs=25 ps=10 (8273.0 [based on 14 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 14 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 12.399999999999972, 8273.0 [15, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=25 ps=10 (8273.0 [based on 15 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=10 (8273.0 [based on 15 runs with cutoff 1000000000.0]) with flip 13
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=10 (8273.0 [based on 15 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (15+1) than incumbent (15), doing incumbent first:
+gs=35 ps=10 (8273.0 [based on 15 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 15 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 14.099999999999966, 8273.0 [16, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=35 ps=10 (8273.0 [based on 16 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 10->50"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=50 (8273.0 [based on 16 runs with cutoff 1000000000.0]) with flip 14
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=50 (8273.0 [based on 16 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (16+1) than incumbent (16), doing incumbent first:
+gs=35 ps=50 (8273.0 [based on 16 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 16 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 15.69999999999996, 8273.0 [17, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=35 ps=50 (8273.0 [based on 17 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 50->20"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=20 (8273.0 [based on 17 runs with cutoff 1000000000.0]) with flip 15
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=20 (8273.0 [based on 17 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (17+1) than incumbent (17), doing incumbent first:
+gs=35 ps=20 (8273.0 [based on 17 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 17 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 17.59999999999998, 8273.0 [18, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=35 ps=20 (8273.0 [based on 18 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->30"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=30 (8273.0 [based on 18 runs with cutoff 1000000000.0]) with flip 16
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=30 (8273.0 [based on 18 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (18+1) than incumbent (18), doing incumbent first:
+gs=35 ps=30 (8273.0 [based on 18 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 18 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 19.60000000000001, 8273.0 [19, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=35 ps=30 (8273.0 [based on 19 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->25"], evaluating ...
+201/1000, 20.100000000000016/100000000.0
+          -> Take improving step to neighbour gs=25 ps=30 (8273.0 [based on 19 runs with cutoff 1000000000.0]) with flip 17
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=30 (8273.0 [based on 19 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (19+1) than incumbent (19), doing incumbent first:
+gs=25 ps=30 (8273.0 [based on 19 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 19 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 21.500000000000036, 8273.0 [20, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=25 ps=30 (8273.0 [based on 20 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=30 (8273.0 [based on 20 runs with cutoff 1000000000.0]) with flip 18
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=30 (8273.0 [based on 20 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (20+1) than incumbent (20), doing incumbent first:
+gs=5 ps=30 (8273.0 [based on 20 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 20 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 23.700000000000067, 8273.0 [21, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=30 (8273.0 [based on 21 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->45"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=30 (8273.0 [based on 21 runs with cutoff 1000000000.0]) with flip 19
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=30 (8273.0 [based on 21 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (21+1) than incumbent (21), doing incumbent first:
+gs=45 ps=30 (8273.0 [based on 21 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 21 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 25.900000000000098, 8273.0 [22, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=30 (8273.0 [based on 22 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 30->40"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=40 (8273.0 [based on 22 runs with cutoff 1000000000.0]) with flip 20
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=40 (8273.0 [based on 22 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (22+1) than incumbent (22), doing incumbent first:
+gs=45 ps=40 (8273.0 [based on 22 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 22 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 28.20000000000013, 8273.0 [23, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=40 (8273.0 [based on 23 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 45->5"], evaluating ...
+301/1000, 30.100000000000158/100000000.0
+          -> Take improving step to neighbour gs=5 ps=40 (8273.0 [based on 23 runs with cutoff 1000000000.0]) with flip 21
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=40 (8273.0 [based on 23 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (23+1) than incumbent (23), doing incumbent first:
+gs=5 ps=40 (8273.0 [based on 23 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 23 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 30.700000000000166, 8273.0 [24, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=40 (8273.0 [based on 24 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 40->20"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=20 (8273.0 [based on 24 runs with cutoff 1000000000.0]) with flip 22
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=20 (8273.0 [based on 24 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (24+1) than incumbent (24), doing incumbent first:
+gs=5 ps=20 (8273.0 [based on 24 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 24 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 33.3000000000002, 8273.0 [25, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=20 (8273.0 [based on 25 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->45"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=20 (8273.0 [based on 25 runs with cutoff 1000000000.0]) with flip 23
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=20 (8273.0 [based on 25 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (25+1) than incumbent (25), doing incumbent first:
+gs=45 ps=20 (8273.0 [based on 25 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 25 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 36.00000000000024, 8273.0 [26, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=20 (8273.0 [based on 26 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->10"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=10 (8273.0 [based on 26 runs with cutoff 1000000000.0]) with flip 24
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=10 (8273.0 [based on 26 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (26+1) than incumbent (26), doing incumbent first:
+gs=45 ps=10 (8273.0 [based on 26 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 26 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 38.80000000000028, 8273.0 [27, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=10 (8273.0 [based on 27 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 10->50"], evaluating ...
+401/1000, 40.1000000000003/100000000.0
+          -> Take improving step to neighbour gs=45 ps=50 (8273.0 [based on 27 runs with cutoff 1000000000.0]) with flip 25
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=50 (8273.0 [based on 27 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (27+1) than incumbent (27), doing incumbent first:
+gs=45 ps=50 (8273.0 [based on 27 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 27 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 41.70000000000032, 8273.0 [28, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=45 ps=50 (8273.0 [based on 28 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 45->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=50 (8273.0 [based on 28 runs with cutoff 1000000000.0]) with flip 26
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=50 (8273.0 [based on 28 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (28+1) than incumbent (28), doing incumbent first:
+gs=5 ps=50 (8273.0 [based on 28 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 28 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 44.700000000000365, 8273.0 [29, 1000000000.0]. With state gs=25, ps=20
+          -> After 1 bonus runs: gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+
+          
+============= Performing 0 bonus runs of state: gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 0 bonus runs for LM: gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+
+   LM for iteration 1: gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 1): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 1): gs=25, ps=20
+==================================================================
+Training quality of this incumbent parameter configuration: 8273.0, based on 29 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+gs=25 ps=20 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 44.80000000000037, 8273.0 [29, 1000000000.0]. With state gs=5, ps=50
+448/1000, 44.80000000000037/100000000.0
+iteration 2, flip 28, evaluation count 448
+    perturb to ---> gs=5 ps=5 (8273.0 [based on 13 runs with cutoff 1000000000.0])
+    perturb to ---> gs=5 ps=40 (8273.0 [based on 24 runs with cutoff 1000000000.0])
+    perturb to ---> gs=5 ps=50 (8273.0 [based on 29 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 44.90000000000037, 8273.0 [30, 1000000000.0]. With state gs=5, ps=50
+   BLS in iteration 2, start with gs=5 ps=50 (8273.0 [based on 30 runs with cutoff 1000000000.0])
+    Changing ["gs: 5->25"], evaluating ...
+          -> Take improving step to neighbour gs=25 ps=50 (8273.0 [based on 30 runs with cutoff 1000000000.0]) with flip 28
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=50 (8273.0 [based on 30 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (30+1) than incumbent (30), doing incumbent first:
+gs=25 ps=50 (8273.0 [based on 30 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 30 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 47.2000000000004, 8273.0 [31, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=25 ps=50 (8273.0 [based on 31 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->45"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=50 (8273.0 [based on 31 runs with cutoff 1000000000.0]) with flip 29
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=50 (8273.0 [based on 31 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (31+1) than incumbent (31), doing incumbent first:
+gs=45 ps=50 (8273.0 [based on 31 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 31 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 47.70000000000041, 8273.0 [32, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=45 ps=50 (8273.0 [based on 32 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 50->10"], evaluating ...
+          -> Take improving step to neighbour gs=45 ps=10 (8273.0 [based on 32 runs with cutoff 1000000000.0]) with flip 30
+
+          
+============= Performing 1 bonus runs of state: gs=45 ps=10 (8273.0 [based on 32 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (32+1) than incumbent (32), doing incumbent first:
+gs=45 ps=10 (8273.0 [based on 32 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 32 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 48.40000000000042, 8273.0 [33, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=45 ps=10 (8273.0 [based on 33 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 45->25"], evaluating ...
+501/1000, 50.10000000000044/100000000.0
+          -> Take improving step to neighbour gs=25 ps=10 (8273.0 [based on 33 runs with cutoff 1000000000.0]) with flip 31
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=10 (8273.0 [based on 33 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (33+1) than incumbent (33), doing incumbent first:
+gs=25 ps=10 (8273.0 [based on 33 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 33 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 50.400000000000446, 8273.0 [34, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=25 ps=10 (8273.0 [based on 34 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=10 (8273.0 [based on 34 runs with cutoff 1000000000.0]) with flip 32
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=10 (8273.0 [based on 34 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (34+1) than incumbent (34), doing incumbent first:
+gs=35 ps=10 (8273.0 [based on 34 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 34 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 52.400000000000475, 8273.0 [35, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=35 ps=10 (8273.0 [based on 35 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 10->5"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=5 (8273.0 [based on 35 runs with cutoff 1000000000.0]) with flip 33
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=5 (8273.0 [based on 35 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (35+1) than incumbent (35), doing incumbent first:
+gs=35 ps=5 (8273.0 [based on 35 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 35 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 55.00000000000051, 8273.0 [36, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=35 ps=5 (8273.0 [based on 36 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->15"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=5 (8273.0 [based on 36 runs with cutoff 1000000000.0]) with flip 34
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=5 (8273.0 [based on 36 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (36+1) than incumbent (36), doing incumbent first:
+gs=15 ps=5 (8273.0 [based on 36 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 36 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 58.40000000000056, 8273.0 [37, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=5 (8273.0 [based on 37 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 15->25"], evaluating ...
+601/1000, 60.100000000000584/100000000.0
+          -> Take improving step to neighbour gs=25 ps=5 (8273.0 [based on 37 runs with cutoff 1000000000.0]) with flip 35
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=5 (8273.0 [based on 37 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (37+1) than incumbent (37), doing incumbent first:
+gs=25 ps=5 (8273.0 [based on 37 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 37 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 61.3000000000006, 8273.0 [38, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=25 ps=5 (8273.0 [based on 38 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->30"], evaluating ...
+          -> Take improving step to neighbour gs=25 ps=30 (8273.0 [based on 38 runs with cutoff 1000000000.0]) with flip 36
+
+          
+============= Performing 1 bonus runs of state: gs=25 ps=30 (8273.0 [based on 38 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (38+1) than incumbent (38), doing incumbent first:
+gs=25 ps=30 (8273.0 [based on 38 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 38 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 63.30000000000063, 8273.0 [39, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=25 ps=30 (8273.0 [based on 39 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 25->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=30 (8273.0 [based on 39 runs with cutoff 1000000000.0]) with flip 37
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=30 (8273.0 [based on 39 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (39+1) than incumbent (39), doing incumbent first:
+gs=5 ps=30 (8273.0 [based on 39 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 39 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.30000000000057, 8273.0 [40, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=5 ps=30 (8273.0 [based on 40 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=30 (8273.0 [based on 40 runs with cutoff 1000000000.0]) with flip 38
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=30 (8273.0 [based on 40 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (40+1) than incumbent (40), doing incumbent first:
+gs=35 ps=30 (8273.0 [based on 40 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 40 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 67.60000000000043, 8273.0 [41, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=35 ps=30 (8273.0 [based on 41 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->15"], evaluating ...
+702/1000, 70.20000000000029/100000000.0
+          -> Take improving step to neighbour gs=15 ps=30 (8273.0 [based on 41 runs with cutoff 1000000000.0]) with flip 39
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=30 (8273.0 [based on 41 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (41+1) than incumbent (41), doing incumbent first:
+gs=15 ps=30 (8273.0 [based on 41 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 41 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 71.90000000000019, 8273.0 [42, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=30 (8273.0 [based on 42 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 30->40"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=40 (8273.0 [based on 42 runs with cutoff 1000000000.0]) with flip 40
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=40 (8273.0 [based on 42 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (42+1) than incumbent (42), doing incumbent first:
+gs=15 ps=40 (8273.0 [based on 42 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 42 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 76.09999999999995, 8273.0 [43, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=40 (8273.0 [based on 43 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 40->10"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=10 (8273.0 [based on 43 runs with cutoff 1000000000.0]) with flip 41
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=10 (8273.0 [based on 43 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (43+1) than incumbent (43), doing incumbent first:
+gs=15 ps=10 (8273.0 [based on 43 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 43 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 80.09999999999972, 8273.0 [44, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=10 (8273.0 [based on 44 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 10->20"], evaluating ...
+803/1000, 80.29999999999971/100000000.0
+          -> Take improving step to neighbour gs=15 ps=20 (8273.0 [based on 44 runs with cutoff 1000000000.0]) with flip 42
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=20 (8273.0 [based on 44 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (44+1) than incumbent (44), doing incumbent first:
+gs=15 ps=20 (8273.0 [based on 44 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 44 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 84.39999999999948, 8273.0 [45, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 15->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0]) with flip 43
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (45+1) than incumbent (45), doing incumbent first:
+gs=35 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 45 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 87.29999999999932, 8273.0 [46, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=35 ps=20 (8273.0 [based on 46 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->50"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=50 (8273.0 [based on 46 runs with cutoff 1000000000.0]) with flip 44
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=50 (8273.0 [based on 46 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (46+1) than incumbent (46), doing incumbent first:
+gs=35 ps=50 (8273.0 [based on 46 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 46 runs with cutoff 1000000000.0])
+904/1000, 90.39999999999914/100000000.0
+ Same incumbent, new precision:
+New Incumbent: 90.39999999999914, 8273.0 [47, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=35 ps=50 (8273.0 [based on 47 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->15"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=50 (8273.0 [based on 47 runs with cutoff 1000000000.0]) with flip 45
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=50 (8273.0 [based on 47 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (47+1) than incumbent (47), doing incumbent first:
+gs=15 ps=50 (8273.0 [based on 47 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 47 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 94.6999999999989, 8273.0 [48, 1000000000.0]. With state gs=5, ps=50
+          -> After 1 bonus runs: gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+
+          
+============= Performing 0 bonus runs of state: gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 0 bonus runs for LM: gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+
+   LM for iteration 2: gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 2): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 2): gs=5, ps=50
+==================================================================
+Training quality of this incumbent parameter configuration: 8273.0, based on 48 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+gs=5 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 94.79999999999889, 8273.0 [48, 1000000000.0]. With state gs=15, ps=50
+   Accepting new better local optimum: gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+948/1000, 94.79999999999889/100000000.0
+iteration 3, flip 47, evaluation count 948
+    perturb to ---> gs=15 ps=30 (8273.0 [based on 42 runs with cutoff 1000000000.0])
+    perturb to ---> gs=45 ps=30 (8273.0 [based on 22 runs with cutoff 1000000000.0])
+    perturb to ---> gs=45 ps=20 (8273.0 [based on 26 runs with cutoff 1000000000.0])
+   BLS in iteration 3, start with gs=45 ps=20 (8273.0 [based on 27 runs with cutoff 1000000000.0])
+    Changing ["gs: 45->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=20 (8273.0 [based on 27 runs with cutoff 1000000000.0]) with flip 47
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=20 (8273.0 [based on 27 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=5 ps=20 (8273.0 [based on 28 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->15"], evaluating ...
+          -> Take improving step to neighbour gs=15 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0]) with flip 48
+
+          
+============= Performing 1 bonus runs of state: gs=15 ps=20 (8273.0 [based on 45 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=15 ps=20 (8273.0 [based on 46 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 15->35"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=20 (8273.0 [based on 47 runs with cutoff 1000000000.0]) with flip 49
+
+          
+============= Performing 2 bonus runs of state: gs=35 ps=20 (8273.0 [based on 47 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (48+1) than incumbent (48), doing incumbent first:
+gs=35 ps=20 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+gs=15 ps=50 (8273.0 [based on 48 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 95.79999999999883, 8273.0 [49, 1000000000.0]. With state gs=15, ps=50
+          -> After 2 bonus runs: gs=35 ps=20 (8273.0 [based on 49 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 20->30"], evaluating ...
+          -> Take improving step to neighbour gs=35 ps=30 (8273.0 [based on 49 runs with cutoff 1000000000.0]) with flip 50
+
+          
+============= Performing 1 bonus runs of state: gs=35 ps=30 (8273.0 [based on 49 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (49+1) than incumbent (49), doing incumbent first:
+gs=35 ps=30 (8273.0 [based on 49 runs with cutoff 1000000000.0])
+gs=15 ps=50 (8273.0 [based on 49 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 96.79999999999878, 8273.0 [50, 1000000000.0]. With state gs=15, ps=50
+          -> After 1 bonus runs: gs=35 ps=30 (8273.0 [based on 50 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 35->5"], evaluating ...
+          -> Take improving step to neighbour gs=5 ps=30 (8273.0 [based on 50 runs with cutoff 1000000000.0]) with flip 51
+
+          
+============= Performing 1 bonus runs of state: gs=5 ps=30 (8273.0 [based on 50 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (50+1) than incumbent (50), doing incumbent first:
+gs=5 ps=30 (8273.0 [based on 50 runs with cutoff 1000000000.0])
+gs=15 ps=50 (8273.0 [based on 50 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 97.9999999999987, 8273.0 [51, 1000000000.0]. With state gs=15, ps=50
+          -> After 1 bonus runs: gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 5->45"], evaluating ...
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+        -> worse: (8273.0 [based on 41 runs with cutoff 1000000000.0])
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+          
+============= Performing 1 bonus runs of state: gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0]) ============ 
+
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+          -> After 1 bonus runs for LM: gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+
+   LM for iteration 3: gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 3): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 3): gs=15, ps=50
+==================================================================
+Training quality of this incumbent parameter configuration: 8273.0, based on 51 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+gs=15 ps=50 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 99.9999999999986, 8273.0 [51, 1000000000.0]. With state gs=5, ps=30
+   Accepting new better local optimum: gs=5 ps=30 (8273.0 [based on 51 runs with cutoff 1000000000.0])
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+Final solution for depth 1 with limit N=2000, and cutoff time=1000000000.0.
+New Incumbent: 99.9999999999986, 8273.0 [51, 1000000000.0]. With state gs=5, ps=30
+
+==================================================================
+ParamILS is finished.
+==================================================================
+
+Final best parameter configuration found: gs=5, ps=30
+==================================================================
+Active parameters: gs=5, ps=30
+
+==================================================================
+Training quality of this final best found parameter configuration: 8273.0, based on 51 runs with cutoff 1000000000.0
+==================================================================
+
+
+==================================================================
+Computing validation result on independent data -- 0 runs with cutoff time 1000000000.0...
+==================================================================
+Combined result: 1000000000000000000
+
+================================================================
+Final best parameter configuration: gs=5, ps=30
+==================================================================
+Active parameters: gs=5, ps=30
+
+================================================================
+Training quality of this final best found parameter configuration: 8273.0, based on 51 runs with cutoff 1000000000.0
+Test quality of this final best found parameter configuration: 1000000000000000000, based on 0 independent runs with cutoff 1000000000.0
+==================================================================
