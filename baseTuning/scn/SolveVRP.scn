@@ -8,5 +8,5 @@ cutoff_length = max
 tunerTimeout = 100000000
 paramfile = SolveVRP.params
 outdir = out/
-instance_file = inst/SolveVRP.inst
-test_instance_file = inst/SolveVRP.inst
+instance_file = inst/solomon.inst
+test_instance_file = inst/solomon.inst

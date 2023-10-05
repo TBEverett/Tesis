@@ -48,7 +48,7 @@ done
 #ne=0.1 #Number of elite solutions
 #nc=0.1 #Number of neighbour solutions
 #xi=0.5 #Upper Bound of Feasible Solutions
-t=5 #Max Runtime
+t=10 #Max Runtime
 
 out=out.txt
 ARGS="-i ${instance} -s ${seed} -ps ${ps} -gs ${gs} -ne ${ne} -nc ${nc} -xi ${xi} -t ${t}"
