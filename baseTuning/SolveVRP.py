@@ -11,7 +11,7 @@ from pyvrp.stop import MaxRuntime
 import argparse
 
 # Ej de linea de ejecucion
-# python3 SolveVRP.py -i solomon/RC208.txt -ps 25 -gs 40 -ne 0.1 -nc 0.1 -lbd 0.1 -ubd 0.5 -t 10 -s 42
+# python3 SolveVRP.py -i solomon/RC208.txt -ps 25 -gs 40 -ne 0.1 -nc 0.1 -xi 0.4 -t 10 -s 42
 
 # Parser de argumentos
 parser = argparse.ArgumentParser(prog="pyVRP-Interface",
@@ -21,8 +21,7 @@ parser.add_argument("-ps", "--pop_size", type=int)
 parser.add_argument("-gs", "--gen_size", type=int)
 parser.add_argument("-ne", "--n_elite", type=float)
 parser.add_argument("-nc", "--n_closest", type=float)
-parser.add_argument("-lbd", "--lb_diversity", type=float)
-parser.add_argument("-ubd", "--ub_diversity", type=float)
+parser.add_argument("-xi", "--xi_ref", type=float)
 parser.add_argument("-t", "--time", type=int)
 parser.add_argument("-s", "--seed", type=int)
 args = parser.parse_args()
@@ -52,7 +51,7 @@ params = p.PopulationParams(min_pop_size=args.pop_size,
                           generation_size=args.gen_size,
                           nb_elite=int(args.pop_size*args.n_elite),
                           nb_close=int(args.pop_size*args.n_closest),
-                          lb_diversity=args.lb_diversity,
-                          ub_diversity=args.ub_diversity)
+                          lb_diversity=float(args.xi_ref) - 0.1,
+                          ub_diversity=float(args.xi_ref) + 0.1)
 res = solve(stop=MaxRuntime(args.time), seed=args.seed, population_params=params)
 print(res.cost())

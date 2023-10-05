@@ -1,9 +1,6 @@
 #/bin/bash
 
-
 instance=$1
-#ps=$2 #Population Size
-
 seed=$5
 shift 5
 
@@ -16,11 +13,28 @@ while [ $# != 0 ]; do
               ps=$arg
             fi
             ;;
-
         -gs) if [ $# -gt 1 ]; then
               arg="$2"
               shift
               gs=$arg
+            fi
+            ;;
+        -ne) if [ $# -gt 1 ]; then
+              arg="$2"
+              shift
+              ne=$arg
+            fi
+            ;;
+        -nc) if [ $# -gt 1 ]; then
+              arg="$2"
+              shift
+              nc=$arg
+            fi
+            ;;
+        -xi) if [ $# -gt 1 ]; then
+              arg="$2"
+              shift
+              xi=$arg
             fi
             ;;
         *) echo "Unrecognized flag or argument: $flag"
@@ -29,16 +43,15 @@ while [ $# != 0 ]; do
     shift
 done
 
+#ps=25 #Population Size
 #gs=40 #Generation Size
-ne=0.1 #Number of elite solutions
-nc=0.1 #Number of neighbour solutions
-lbd=0.1 #Lower Bound of Feasible Solutions
-ubd=0.5 #Upper Bound of Feasible Solutions
+#ne=0.1 #Number of elite solutions
+#nc=0.1 #Number of neighbour solutions
+#xi=0.5 #Upper Bound of Feasible Solutions
 t=5 #Max Runtime
-s=42 #Seed
 
 out=out.txt
-ARGS="-i ${instance} -s ${s} -ps ${ps} -gs ${gs} -ne ${ne} -nc ${nc} -lbd ${lbd} -ubd ${ubd} -t ${t}"
+ARGS="-i ${instance} -s ${seed} -ps ${ps} -gs ${gs} -ne ${ne} -nc ${nc} -xi ${xi} -t ${t}"
 screen=salida
 rm -rf ${screen}
 
