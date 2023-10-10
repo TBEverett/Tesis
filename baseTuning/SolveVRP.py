@@ -27,7 +27,7 @@ parser.add_argument("-s", "--seed", type=int)
 args = parser.parse_args()
 
 #Leemos instancia
-INSTANCE = p.read(args.instance, "solomon", "trunc1")
+INSTANCE = p.read(args.instance, "solomon", "round")
 
 #Creamos nuestra propia función solve que acepta parametros de poblacion
 def solve(stop, seed, population_params):
