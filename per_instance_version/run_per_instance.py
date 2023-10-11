@@ -11,14 +11,11 @@ instances_with_sols = os.listdir(instance_group)
 instances = [file.replace(".txt","") for file in instances_with_sols if ".sol" not in file]
 instance_amount_per_thread = len(instances)//NTHREADS
 
-
-test = []
 def threaded_paramILS(offset):
     for i in range(instance_amount_per_thread):
         #Ejecutamos paramILS, almacenando todo en un directorio para esa instancia
         if i + offset >= len(instances): #Caso para instancias finales
             break
-        test.append(i + offset)
         subprocess.run(["bash","execute.sh",instances[i + offset],instance_group])
 
 threads = list()
