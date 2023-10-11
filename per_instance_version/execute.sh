@@ -19,5 +19,5 @@ echo ../${instance_group}/${instance}.txt >> "inst/single.inst"
 
 #Ejecutamos desde el directorio de arriba para reutilizar el ejecutable
 #Se edito el .sh para que funcione correctamente
-nohup bash ToDoParamILS.sh toTune/SolveVRP.tune ${seed} ${newDir} > OUT &
-
+#nohup bash ToDoParamILS.sh toTune/SolveVRP.tune ${seed} ${newDir} > OUT &
+bash ToDoParamILS.sh toTune/SolveVRP.tune ${seed} ${newDir} > OUT
