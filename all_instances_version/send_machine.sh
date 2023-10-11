@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Codigo para 
+
+pass=$2
+
+if [ $1 = "ton" ]
+then
+    path="tbarros@ssh2.inf.utfsm.cl:/home/tbarros/Tesis"
+fi
+
+if [ $1 = "mach" ]
+then 
+    path="elizabeth@s2.labia.inf.utfsm.cl:/home/elizabeth/Tomas/Tesis"
+fi
+echo "Starting Transfer"
+sshpass -p $pass scp -r baseTuning $path
+sshpass -p $pass scp -r ALL.sh $path
+sshpass -p $pass scp -r execute.sh $path
+sshpass -p $pass scp -r requirements.txt $path
+sshpass -p $pass scp -r send_machine.sh $path
+echo "Transfer Done"
