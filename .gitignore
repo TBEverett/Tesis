@@ -2,3 +2,6 @@ baseTuning_*
 S*
 tesis_env
 _*
+.env
+best_parameters.csv
+*.txt

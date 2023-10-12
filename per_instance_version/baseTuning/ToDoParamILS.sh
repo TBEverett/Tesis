@@ -1,9 +1,11 @@
 #!/bin/bash
 
+source ../.env
+
 toTune=$1
 seed=$2
 dir=$3
-maxEvaluations=1
+maxEvaluations=${PARAMILS_MAXEVALS}
 algo=SolveVRP
 
 respaldos=respaldos${algo}

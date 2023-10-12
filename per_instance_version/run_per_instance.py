@@ -29,3 +29,31 @@ for index, thread in enumerate(threads):
     thread.join() 
 
 print("Todos los paramILS finalizaron su ejecución")
+
+#Escribimos resultados a best_parameters.csv
+all_dirs = os.listdir(".")
+dirs = [d for d in all_dirs if d[0] == "_"]
+best_parameters = list()
+for dir in dirs:
+    results_file = open(dir+"/ParamILS_ASolveVRP_FSolveVRP_S0.out","r")
+    results_lines = list()
+    for line in results_file:
+        if "Final best" in line:
+            results_lines.append(line)
+    result_line = results_lines[-1]
+    l = result_line.strip().split(" ")
+    best_parameters.append({"dir":dir,"params":[l[4].strip("gs=,"),
+                                                l[5].strip("nc=,"),
+                                                l[6].strip("ne=,"),
+                                                l[7].strip("ps=,"),
+                                                l[8].strip("xi=,")]})
+    results_file.close()
+
+output_file = open("best_parameters.csv","w")
+output_file.write("instance,gs,nc,ne,ps,xi\n")
+for element in best_parameters:
+    output_file.write(element["dir"].split("_")[1])
+    for p in element["params"]:
+        output_file.write(","+p)
+    output_file.write("\n")
+output_file.close()
