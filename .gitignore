@@ -3,5 +3,5 @@ S*
 tesis_env
 _*
 .env
-best_parameters.csv
+*.csv
 *.txt

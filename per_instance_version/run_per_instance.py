@@ -8,6 +8,9 @@ load_dotenv()
 time = os.getenv("SOLVEVRP_TIME_LIMIT")
 max_evals = os.getenv("PARAMILS_MAXEVALS")
 
+folder_name = "_"+time+"_"+max_evals
+subprocess.run(["mkdir",folder_name])
+
 NTHREADS = 10
 
 instance_group = "solomon" #o Homberger
@@ -22,7 +25,7 @@ def threaded_paramILS(offset):
         #Ejecutamos paramILS, almacenando todo en un directorio para esa instancia
         if i + offset >= len(instances): #Caso para instancias finales
             break
-        subprocess.run(["bash","execute.sh",instances[i + offset],instance_group])
+        subprocess.run(["bash","execute.sh",instances[i + offset],instance_group,folder_name])
 
 threads = list()
 for thread_id in range(NTHREADS + 2):
@@ -37,11 +40,11 @@ for index, thread in enumerate(threads):
 print("Todos los paramILS finalizaron su ejecución")
 
 #Escribimos resultados a best_parameters.csv
-all_dirs = os.listdir(".")
+all_dirs = os.listdir(folder_name)
 dirs = [d for d in all_dirs if d[0] == "_"]
 best_parameters = list()
 for dir in dirs:
-    results_file = open(dir+"/ParamILS_ASolveVRP_FSolveVRP_S0.out","r")
+    results_file = open(folder_name + "/" + dir + "/ParamILS_ASolveVRP_FSolveVRP_S0.out","r")
     results_lines = list()
     for line in results_file:
         if "Final best" in line:
@@ -55,8 +58,10 @@ for dir in dirs:
                                                 l[8].strip("xi=,")]})
     results_file.close()
 
-output_file = open("best_parameters.csv","w")
-output_file.write("time,maxevals,instance,gs,nc,ne,ps,xi\n")
+output_file_name = "best_params_" + time + "_" + max_evals + ".csv"
+output_file = open(output_file_name,"a")
+if os.path.getsize(output_file_name) == 0: #Si archivo esta vacio agregamos enunciado
+    output_file.write("time,maxevals,instance,gs,nc,ne,ps,xi\n")
 for element in best_parameters:
     output_file.write(time + "," + max_evals + "," + element["dir"].split("_")[1])
     for p in element["params"]:

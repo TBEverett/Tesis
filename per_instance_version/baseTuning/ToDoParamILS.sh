@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ../.env
+source ../../.env
 
 toTune=$1
 seed=$2
