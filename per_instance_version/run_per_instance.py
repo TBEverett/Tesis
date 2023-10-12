@@ -58,7 +58,7 @@ for dir in dirs:
 output_file = open("best_parameters.csv","w")
 output_file.write("time,maxevals,instance,gs,nc,ne,ps,xi\n")
 for element in best_parameters:
-    output_file.write("time,"+"maxevals,"+element["dir"].split("_")[1])
+    output_file.write(time + "," + max_evals + "," + element["dir"].split("_")[1])
     for p in element["params"]:
         output_file.write(","+p)
     output_file.write("\n")
