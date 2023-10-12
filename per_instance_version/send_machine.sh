@@ -15,11 +15,11 @@ then
 fi
 echo "Starting Transfer"
 sshpass -p $pass scp -r baseTuning $path
-sshpass -p $pass scp -r ALL.sh $path
 sshpass -p $pass scp -r execute.sh $path
 sshpass -p $pass scp -r requirements.txt $path
 sshpass -p $pass scp -r send_machine.sh $path
 sshpass -p $pass scp -r Homberger $path
 sshpass -p $pass scp -r solomon $path
 sshpass -p $pass scp -r run_per_instance.py $path
+sshpass -p $pass scp -r README.md $path
 echo "Transfer Done"

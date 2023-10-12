@@ -2,6 +2,12 @@ import os
 import subprocess
 import threading
 
+from dotenv import load_dotenv
+load_dotenv()
+
+time = os.getenv("SOLVEVRP_TIME_LIMIT")
+max_evals = os.getenv("PARAMILS_MAXEVALS")
+
 NTHREADS = 10
 
 instance_group = "solomon" #o Homberger
@@ -50,9 +56,9 @@ for dir in dirs:
     results_file.close()
 
 output_file = open("best_parameters.csv","w")
-output_file.write("instance,gs,nc,ne,ps,xi\n")
+output_file.write("time,maxevals,instance,gs,nc,ne,ps,xi\n")
 for element in best_parameters:
-    output_file.write(element["dir"].split("_")[1])
+    output_file.write("time,"+"maxevals,"+element["dir"].split("_")[1])
     for p in element["params"]:
         output_file.write(","+p)
     output_file.write("\n")
