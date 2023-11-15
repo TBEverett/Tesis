@@ -5,3 +5,4 @@ _*
 .env
 *.csv
 *.txt
+*.pdf
